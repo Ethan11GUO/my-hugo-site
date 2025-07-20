@@ -1,0 +1,70 @@
+baseURL = "https://ethan11guo.github.io/my-hugo-site/"
+languageCode = "en-us"
+title = "My Academic Site"
+theme = "PaperMod"
+
+
+[params]
+  author = "Shengqi Gao"
+  avatar = "images/avatar.png"  # 确保头像在 static/images/avatar.png
+  defaultTheme = "auto"
+  ShowReadingTime = true
+  ShowPostNavLinks = true
+  ShowCodeCopyButtons = true
+  ShowPostsOnHomePage = true
+  env = "production"  # optional
+  customCSS = ["css/custom.css"]
+
+
+[params.homeInfoParams]
+    Title = ""
+    Content = """
+<div style="text-align: center;">
+  <img src="/images/avatar.png" alt="avatar" style="display: block; margin: 0 auto; width: 140px; border-radius: 50%; margin-bottom: 1rem;" />
+  <h2 style="margin: 0.8rem 0;">Shengqi Gao</h2>
+
+  <div style="font-size: 1rem; line-height: 1.5; margin-bottom: 1rem;">
+    Shanghai, China<br>
+    <a href="mailto:gaoshq2023@shanghaitech.edu.cn">gaoshq2023@shanghaitech.edu.cn</a><br>
+    +86 13991726183
+  </div>
+</div>
+
+<div style="text-align: justify; font-size: 1.1rem; line-height: 1.6;">
+  <p>
+    I am a Master’s student in Electrical Engineering at ShanghaiTech University, focusing on battery-free IoT and low-power circuit design, particularly in energy harvesting and self-powered embedded systems. He holds a B.Sc. in Earth Science with a minor in Electronics and Information Engineering from Central South University. His interdisciplinary background supports his work on several self-powered sensing systems involving photovoltaic and vibration energy harvesting. He has experience in embedded C/C++ programming, PCB design, circuit debugging, and data analysis. Shengqi has received awards for academic excellence and is fluent in both Mandarin and English.
+  </p>
+</div>
+
+<p style="text-align: center; margin-top: 1.5rem;">
+  <a href="/about/">More about me →</a>
+</p>
+"""
+
+
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[[menu.main]]
+  name = "Home"
+  url = "/"
+  weight = 1
+
+[[menu.main]]
+  name = "About"
+  url = "/about/"
+  weight = 2
+
+[[menu.main]]
+  name = "Projects"
+  url = "/Projects/"
+  weight = 3
+
+[[menu.main]]
+  name = "Publications"
+  url = "/publication/"
+  weight = 4
+
