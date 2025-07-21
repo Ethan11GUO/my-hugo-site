@@ -1,4 +1,4 @@
-baseURL = "https://ethan11guo.github.io/my-hugo-site/"
+baseURL = "localhost:1313/"
 languageCode = "en-us"
 title = "My Academic Site"
 theme = "PaperMod"
